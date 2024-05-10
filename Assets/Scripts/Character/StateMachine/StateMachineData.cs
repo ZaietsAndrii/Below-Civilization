@@ -27,6 +27,7 @@ public class StateMachineData
 
 
 
+
     public float YInput
     {
         get => _yInput;

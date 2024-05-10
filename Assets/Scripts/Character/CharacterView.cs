@@ -14,6 +14,12 @@ public class CharacterView : MonoBehaviour
     private const string IsJumping = "IsJumping";
     private const string IsFalling = "IsFalling";
 
+    private const string IsParkoured = "IsParkoured";
+    private const string IsJumpingUp = "IsJumpingUp";
+    private const string IsJumpingHighUp = "IsJumpingHighUp";
+    private const string IsClimbingUp = "IsClimbingUp";
+
+
 
 
     private Animator _animator;
@@ -43,6 +49,21 @@ public class CharacterView : MonoBehaviour
 
     public void StartFalling() => _animator.SetBool(IsFalling, true);
     public void StopFalling() => _animator.SetBool(IsFalling, false);
+
+
+
+
+    public void StartParkoured() => _animator.SetBool(IsParkoured, true);
+    public void StopParkoured() => _animator.SetBool(IsParkoured, false);
+
+    public void StartJumpingUp() => _animator.SetBool(IsJumpingUp, true);
+    public void StopJumpingUp() => _animator.SetBool(IsJumpingUp, false);
+
+    public void StartJumpingHighUp() => _animator.SetBool(IsJumpingHighUp, true);
+    public void StopJumpingHighUp() => _animator.SetBool(IsJumpingHighUp, false);
+
+    public void StartClimbingUp() => _animator.SetBool(IsClimbingUp, true);
+    public void StopClimbingUp() => _animator.SetBool(IsClimbingUp, false);
 
 
 

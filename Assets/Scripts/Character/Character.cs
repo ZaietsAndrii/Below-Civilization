@@ -10,6 +10,7 @@ public class Character : MonoBehaviour
     [SerializeField] private GroundChecker _groundChecker;
     [SerializeField] private Transform _cameraTarget;
     [SerializeField] private Transform _raycastPoint;
+    [SerializeField] private ObstacleChecker _obstacleChecker;
 
     private PlayerInput _input;
     private CharacterStateMachine _stateMachine;
@@ -22,6 +23,8 @@ public class Character : MonoBehaviour
     public GroundChecker GroundChecker => _groundChecker;
     public Transform CameraTarget => _cameraTarget;
     public Transform RaycastPoint => _raycastPoint;
+    public ObstacleChecker ObstacleChecker => _obstacleChecker;
+
    
 
     private void Awake()

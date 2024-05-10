@@ -19,3 +19,40 @@ MonoBehaviour:
     _jumpingStateConfig:
       _maxHeight: 2
     _speed: 1
+  _parkouredStateConfig:
+    _jumpingUpStateConfig:
+      _minimumHeigh: 0.3
+      _maximumHeigh: 0.6
+      _animationMatchingConfigs:
+        _allowTargetMatching: 1
+        _lookAtObstacle: 1
+        _compareBodyPart: 3
+        _compareStartTime: 0.55
+        _compareEndTime: 0.97
+        _comparePositionWeight: {x: 0, y: 1, z: 0}
+        _delay: 0
+        _rotationSpeed: 600
+    _jumpingHighUpStateConfig:
+      _minimumHeigh: 0.6
+      _maximumHeigh: 1.2
+      _animationMatchingConfigs:
+        _allowTargetMatching: 1
+        _lookAtObstacle: 1
+        _compareBodyPart: 3
+        _compareStartTime: 0.19
+        _compareEndTime: 0.97
+        _comparePositionWeight: {x: 0, y: 1, z: 0}
+        _delay: 0
+        _rotationSpeed: 600
+    _climbingUpStateConfig:
+      _minimumHeigh: 1.2
+      _maximumHeigh: 3
+      _animationMatchingConfigs:
+        _allowTargetMatching: 1
+        _lookAtObstacle: 1
+        _compareBodyPart: 5
+        _compareStartTime: 0.08
+        _compareEndTime: 0.28
+        _comparePositionWeight: {x: 0, y: 1, z: 1}
+        _delay: 0
+        _rotationSpeed: 600
